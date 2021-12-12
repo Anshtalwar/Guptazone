@@ -1,0 +1,43 @@
+<html>
+  <head>
+    <title>Login</title>
+    <link href="https://fonts.googleapis.com/css?family=Nunito:400" rel="stylesheet">
+    <link rel="stylesheet" href="/css/manager.css" />
+    <script src="https://www.google.com/recaptcha/api.js" async defer></script>
+  </head>
+  <body>
+  
+    <div id="login_div" class="main-div">
+      <button class="back-button" onclick="window.location.href='/index.html'">Back</button>
+      <h3> Login </h3>
+      <input type="email" placeholder="Email" id="email_field" />
+      <input type="password" placeholder="Password" id="password_field" />
+      <button onclick="login()" class="btns">Login to Account</button>
+    </div>
+    <div id="user_div" class="loggedin-div">
+      <button onclick="window.location.href='/index.html'">Back</button>
+      <button onclick="logout()" class="btns">Logout</button>
+      <button onclick="window.location.href='/addEmployee.html'" class="btns">Add Employee</button>
+      <button onclick="window.location.href='/addCustomerData.html'" class="btns">Add Customer Data</button>
+    </div>
+    
+    
+    <script src="https://www.gstatic.com/firebasejs/4.8.1/firebase.js"></script>
+    <script>
+      var config = {
+      apiKey: "AIzaSyBYSJx5PlkwezL7llymQn_a-qdQ86ker08",
+      authDomain: "guptazo.firebaseapp.com",
+      databaseURL: "https://guptazo-default-rtdb.asia-southeast1.firebasedatabase.app",
+      projectId: "guptazo",
+      storageBucket: "guptazo.appspot.com",
+      messagingSenderId: "359334586787",
+      appId: "1:359334586787:web:daac91a2d663bd6b289216",
+      measurementId: "${config.measurementId}"
+      };
+      firebase.initializeApp(config);
+    </script>
+    <script src="/js/manager.js"></script>
+  
+  </body>
+  </html>
+  
