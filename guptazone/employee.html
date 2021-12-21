@@ -1,14 +1,16 @@
 <html>
   <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Login</title>
-    <link href="https://fonts.googleapis.com/css?family=Nunito:400" rel="stylesheet">
-    <link rel="stylesheet" href="/css/employee.css" />
-    <script src="https://www.google.com/recaptcha/api.js" async defer></script>
+    <link rel="stylesheet" href="./css/employee.css" />
+    <script src="/js/back.js"></script>
   </head>
   <body>
   
     <div id="login_div" class="main-div">
-      <button class="back-button" onclick="window.location.href='/index.html'">Back</button>
+      <button onclick="backindex()">Back</button>
       <h3> Login </h3>
       <input type="email" placeholder="Email" id="email_field" />
       <input type="password" placeholder="Password" id="password_field" />
@@ -23,22 +25,21 @@
   
     </div>
     
-    <script src="https://www.gstatic.com/firebasejs/4.8.1/firebase.js"></script>
-    <script>
-      var config = {
-      apiKey: "AIzaSyBYSJx5PlkwezL7llymQn_a-qdQ86ker08",
-      authDomain: "guptazo.firebaseapp.com",
-      databaseURL: "https://guptazo-default-rtdb.asia-southeast1.firebasedatabase.app",
-      projectId: "guptazo",
-      storageBucket: "guptazo.appspot.com",
-      messagingSenderId: "359334586787",
-      appId: "1:359334586787:web:daac91a2d663bd6b289216",
-      measurementId: "${config.measurementId}"
-      };
-      firebase.initializeApp(config);
-    </script>
-    <script src="/js/employee.js"></script>
-  
+<script src="https://www.gstatic.com/firebasejs/4.8.1/firebase.js"></script>
+<script>
+var config = {
+  apiKey: "AIzaSyB47-TY5QGkV-9rmL23wSZ-5S9HJkY5Hzo",
+  authDomain: "guptazone-abac6.firebaseapp.com",
+  databaseURL: "https://guptazone-abac6-default-rtdb.firebaseio.com",
+  projectId: "guptazone-abac6",
+  storageBucket: "guptazone-abac6.appspot.com",
+  messagingSenderId: "1022785917",
+  appId: "1:1022785917:web:405cf6da419a68144eb414",
+  measurementId: "G-TDV4YGCJPV"};
+  firebase.initializeApp(config);
+  </script>
+  <script src="/js/employee.js"></script>
+
   </body>
   </html>
   

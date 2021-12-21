@@ -35,6 +35,10 @@ function login(){
 
 }
 
+function addEmployee() {
+  window.location="/addEmployee.html"
+}
+
 function logout(){
   firebase.auth().signOut();
 }
